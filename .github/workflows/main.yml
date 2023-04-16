@@ -14,10 +14,8 @@ jobs:
 
     steps:
   
-      - name: 'Before'
-        run: ls
-
       - uses: actions/checkout@v3
-      
-      - name: 'After'
-        run: ls
+
+      - name: "Login to Docjer Hub"
+        run: docker login --username mhmoudsyd  --password dckr_pat_EGqKMEtDf7gQYQJU4tdmIbpDDwo
+
