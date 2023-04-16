@@ -13,8 +13,11 @@ jobs:
 
 
     steps:
-      - name: 'Testing Github Action'
-        run: pwd
+  
+      - name: 'Before'
+        run: echo ls
 
-      - name: 'Printing folder contents'
+      - uses: actions/chechout@v3
+      
+      - name: 'After'
         run: echo ls
